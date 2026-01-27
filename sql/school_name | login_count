@@ -1,0 +1,7 @@
+SELECT
+    school_name,
+    SUM(login_count) AS total_logins
+FROM school_login_summary
+GROUP BY school_name
+ORDER BY total_logins DESC;
+
