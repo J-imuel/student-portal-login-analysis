@@ -1,7 +1,8 @@
 SELECT
     school_name,
     SUM(login_count) AS total_logins
-FROM sdo_par_number_of_times.xlsx
+FROM school_login_summary
 GROUP BY school_name
 ORDER BY total_logins DESC;
+
 
